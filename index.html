@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+<body>
+    <h1>Escolha uma opção</h1>
+
+    <!--Botões para interagir com o Javascript-->
+    <button id="btnBambu" onclick="exibirImagem('bambu', this)">Bambu</button>
+    <button id="btMadeira" onclick="exibirImagem('madeira', this)">Madeira</button>
+    <button id="btnTerra" onclick="exibirImagem('terra', this)">Terra</button>
+    <button id="btnBau" onclick="exibirImagem('bau', this)">Baú</button>
+    <button id="btnDiamante" onclick="exibirImagem('diamante', this)">Diamante</button>
+
+    <!--Área onde as imagens serão exibidas-->
+    <div id="imagemContainer">
+        <img id="imagem" src="" alt="Imagem" style="display:none;">
+    </div>
+
+    <!-- Área onde o texto será alterado -->
+     <p id="texto">Clique em um dos botões acima para exibir uma imagem e uma mensagem.</p>
+
+     <script src="script.js"></script>
+</body>
+</html>
